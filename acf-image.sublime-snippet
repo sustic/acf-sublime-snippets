@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+<?php $image = get_field('${1:featured_image}');
+if( !empty($image) ): ?>
+	<img src="<?php echo $image['sizes']['${1:image-size}']; ?>" alt="<?php echo $image['alt']; ?>" class="" />
+<?php endif; ?>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>acf-img</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
+
+
